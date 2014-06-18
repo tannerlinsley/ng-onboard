@@ -1,0 +1,27 @@
+{
+    "name": "angular-guide",
+    "version": "1.0.0",
+    "main": "src/angular-guide.js",
+    "description": "Angular directive to wrap guide.js",
+    "license": "MIT",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt",
+        "**/*.html",
+        "README.md",
+        "assets",
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "AngularJS": "~1.2.8",
+        "guide.js": "~1.0.0"
+    },
+    "homepage": "https://github.com/tannerlinsley/angular-guide",
+    "authors": [
+        "tannerlinsley"
+    ]
+}
