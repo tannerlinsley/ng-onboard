@@ -18,7 +18,7 @@
     ],
     "dependencies": {
         "angular": "~1.2.8",
-        "guide.js": "~1.0.0"
+        "guide.js": "git://github.com/tannerlinsley/guide.js"
     },
     "homepage": "https://github.com/tannerlinsley/angular-guide",
     "authors": [
