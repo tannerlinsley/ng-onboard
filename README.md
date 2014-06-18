@@ -3,15 +3,11 @@ angular-guide.js [![Build Status](https://travis-ci.org/mendhak/angular-guide.js
 
 An angularjs directive that wraps [guide.js](https://github.com/Dozyatom/guide.js) functionality.
 
-![angularguide](http://farm8.staticflickr.com/7382/9741892196_ccc16b8a16_o.png)
-
-See [the project page](http://code.mendhak.com/angular-guide.js/) for an overview.
-
 ## Bower
 
 You can install this package through `Bower` by using the following command :
 
-    bower install angular-guide.js --save
+    bower install angular-guide --save
 
 
 
@@ -42,7 +38,7 @@ And browse to `http://localhost:8000/example/index.html`
 
 ## License
 
-As with guide.js, this is under the [MIT license](https://github.com/mendhak/angular-guide.js/blob/master/LICENSE).
+As with guide.js, this is under the [MIT license](https://github.com/tannerlinsley/angular-guide/blob/master/LICENSE).
 
 
 
