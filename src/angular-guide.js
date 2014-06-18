@@ -9,52 +9,15 @@ ngGuideDirective.directive('ngGuideOptions', ['$timeout',
             scope: {
                 ngGuideMethod: "=",
                 ngGuideOptions: '=',
-                /*ngGuideOncomplete: '&',
-                ngGuideOnexit: '&',
-                ngGuideOnchange: '&',
-                ngGuideOnbeforechange: '&',
-                ngGuideOnafterchange: '&',
-                ngGuideAutostart: '@'*/
             },
             link: function(scope, element, attrs) {
-                scope.ngGuideMethod = function(step) {
-
-                    var guide;
-
-                    if (typeof(step) === 'string' || 0) {
-                        guide = guideJs(step);
-
-                    } else {
-                        guide = $(element).guide();
-                    }
-
-                    guide.setOptions(scope.ngGuideOptions);
-
-                    /*if (scope.ngGuideOncomplete) {
-                        guide.oncomplete(scope.ngGuideOncomplete);
-                    }
-
-                    if (scope.ngGuideOnexit) {
-                        guide.onexit(scope.ngGuideOnexit);
-                    }
-
-                    if (scope.ngGuideOnchange) {
-                        guide.onchange(scope.ngGuideOnchange);
-                    }
-
-                    if (scope.ngGuideOnbeforechange) {
-                        guide.onbeforechange(scope.ngGuideOnbeforechange);
-                    }
-
-                    if (scope.ngGuideOnafterchange) {
-                        guide.onafterchange(scope.ngGuideOnafterchange);
-                    }*/
-
-                    if (typeof(step) === 'number' || 0) {
-                        guide.goToStep(step).start();
-                    } else {
+                scope.ngGuideMethod = function() {
+                    $timeout(function() {
+                        var guide = $(element).guide(scope.ngGuideOptions);
+                        console.log('options set', scope.ngGuideOptions);
                         guide.start();
-                    }
+                        console.log('tour started');
+                    });
                 };
 
                 if (scope.ngGuideAutostart == 'true') {
