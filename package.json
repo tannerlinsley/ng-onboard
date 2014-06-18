@@ -2,7 +2,7 @@
     "name": "angular-guide.js",
     "version": "0.1.0",
     "description": "Angular directive to wrap guide.js",
-    "main": "angular-guide.js",
+    "main": "angular-guide",
     "directories": {
         "example": "example",
         "lib": "lib"
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/tannerlinsley/angular-guide.js.git"
+        "url": "git://github.com/tannerlinsley/angular-guide.git"
     },
     "keywords": [
         "angular",
@@ -22,9 +22,9 @@
     "author": "tannerlinsley",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/tannerlinsley/angular-guide.js/issues"
+        "url": "https://github.com/tannerlinsley/angular-guide/issues"
     },
-    "homepage": "https://github.com/tannerlinsley/angular-guide.js",
+    "homepage": "https://github.com/tannerlinsley/angular-guide",
     "devDependencies": {
         "grunt": "~0.4.4",
         "grunt-cli": "~0.1.13",
