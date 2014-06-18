@@ -1,7 +1,7 @@
-angular-guide.js [![Build Status](https://travis-ci.org/mendhak/angular-guide.js.svg?branch=master)](https://travis-ci.org/mendhak/angular-guide.js)
+angular-guide
 ================
 
-An angularjs directive that wraps [guide.js](https://github.com/Dozyatom/guide.js) functionality.
+An angularjs directive that wraps [guide.js](https://github.com/Dozyatom/guide.js).
 
 ## Bower
 
