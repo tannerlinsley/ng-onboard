@@ -18,11 +18,11 @@
   "dependencies": {
     "jquery": "~2.1.1"
   },
-  "_release": "6dfa2217c9",
+  "_release": "bc9e2767f6",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "6dfa2217c9ce9e1aa508b28df702f08bddc23908"
+    "commit": "bc9e2767f69ae43fc7a8f6603b2b16bd62cdde10"
   },
   "_source": "git://github.com/nozzle/onboard.js.git",
   "_target": "*",
