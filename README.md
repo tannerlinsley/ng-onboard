@@ -1,16 +1,13 @@
-angular-guide
+ng-onboard
 ================
 
-An angularjs directive that wraps [guide.js](https://github.com/Dozyatom/guide.js).
+An angularjs directive that wraps [onboard.js](https://github.com/nozzle/onboard.js).
 
 ## Bower
 
 You can install this package through `Bower` by using the following command :
 
-    bower install angular-guide --save
-
-
-
+    bower install ng-onboard --save
 
 
 ## Working with the code
@@ -19,11 +16,11 @@ First, get the node modules needed (grunt, bower)
 
     npm install
     
-Next, use bower to get the JS libraries needed (guide.js)
+Next, use bower to get the JS libraries needed (onboard.js)
 
     node_modules/.bin/bower install
 
-Then, whenever you make any changes, get grunt to build the minified angular-guide.min.js
+Then, whenever you make any changes, get grunt to build the minified ng-onboard.min.js
 
     node_modules/.bin/grunt 
 
@@ -38,7 +35,7 @@ And browse to `http://localhost:8000/example/index.html`
 
 ## License
 
-As with guide.js, this is under the [MIT license](https://github.com/tannerlinsley/angular-guide/blob/master/LICENSE).
+As with onboard.js, this is under the [MIT license](https://github.com/tannerlinsley/ng-onboard/blob/master/LICENSE).
 
 
 

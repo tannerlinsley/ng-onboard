@@ -1,8 +1,8 @@
 {
-    "name": "angular-guide.js",
+    "name": "ng-onboard.js",
     "version": "0.1.0",
-    "description": "Angular directive to wrap guide.js",
-    "main": "angular-guide",
+    "description": "Angular directive to wrap onboard.js",
+    "main": "ng-onboard",
     "directories": {
         "example": "example",
         "lib": "lib"
@@ -12,19 +12,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/tannerlinsley/angular-guide.git"
+        "url": "git://github.com/tannerlinsley/ng-onboard.git"
     },
     "keywords": [
         "angular",
         "guide.js",
-        "angular-guide"
+        "ng-onboard"
     ],
     "author": "tannerlinsley",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/tannerlinsley/angular-guide/issues"
+        "url": "https://github.com/tannerlinsley/ng-onboard/issues"
     },
-    "homepage": "https://github.com/tannerlinsley/angular-guide",
+    "homepage": "https://github.com/tannerlinsley/ng-onboard",
     "devDependencies": {
         "grunt": "~0.4.4",
         "grunt-cli": "~0.1.13",
