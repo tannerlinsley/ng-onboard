@@ -4,10 +4,10 @@ app.controller('MyController', function($scope) {
 
     $scope.onboardOptions = {
         steps: [{
-            selector: document.querySelector('#step1'),
+            selector: '#step1',
             intro: "This is the first tooltip."
         }, {
-            selector: document.querySelectorAll('#step2')[0],
+            selector: '#step2',
             intro: "<strong>You</strong> can also <em>include</em> HTML",
         }, {
             selector: '#step3',

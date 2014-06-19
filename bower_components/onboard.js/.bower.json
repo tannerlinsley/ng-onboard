@@ -1,0 +1,30 @@
+{
+  "name": "onboard.js",
+  "main": "onboard.js",
+  "homepage": "https://github.com/nozzle/onboard.js",
+  "authors": [
+    "tannerlinsley",
+    "Dozyatom"
+  ],
+  "description": "jQuery plugin for onboarding and tours through an html document",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "_release": "6dfa2217c9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6dfa2217c9ce9e1aa508b28df702f08bddc23908"
+  },
+  "_source": "git://github.com/nozzle/onboard.js.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/nozzle/onboard.js"
+}

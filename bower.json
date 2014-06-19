@@ -1,27 +1,32 @@
 {
-    "name": "ng-onboard",
-    "version": "1.0.0",
-    "main": "src/ng-onboard.js",
-    "description": "Angular directive to wrap onboard.js",
-    "license": "MIT",
-    "ignore": [
-        ".jshintrc",
-        "**/*.txt",
-        "**/*.html",
-        "README.md",
-        "assets",
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "angular": "~1.2.8",
-        "onboard.js": "git://github.com/nozzle/onboard.js"
-    },
-    "homepage": "https://github.com/tannerlinsley/ng-onboard",
-    "authors": [
-        "tannerlinsley"
-    ]
+  "name": "ng-onboard",
+  "version": "1.0.0",
+  "main": "src/ng-onboard.js",
+  "description": "Angular directive to wrap onboard.js",
+  "license": "MIT",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "**/*.html",
+    "README.md",
+    "assets",
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.2.8",
+    "onboard.js": "git://github.com/nozzle/onboard.js"
+  },
+  "homepage": "https://github.com/tannerlinsley/ng-onboard",
+  "authors": [
+    "tannerlinsley"
+  ],
+  "keywords": [
+    "onboard",
+    "angular",
+    "angularjs"
+  ]
 }
