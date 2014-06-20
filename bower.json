@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "angular": "~1.2.8",
-    "onboard.js": "~"
+    "onboard.js": "master"
   },
   "homepage": "https://github.com/tannerlinsley/ng-onboard",
   "authors": [
