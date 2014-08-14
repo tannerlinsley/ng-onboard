@@ -6,18 +6,32 @@ ngOnboardDirective.directive('ngOnboardOptions', ['$timeout',
 
         return {
             restrict: 'A',
-            scope: {
-                ngOnboardMethod: "=",
-                ngOnboardStop: "=",
-                ngOnboardOptions: '=',
-            },
             link: function(scope, element, attrs) {
 
                 var onboard;
 
+                attrs.$observe('ngOnboardMethod', function(value) {
+                    value = function() {
+                        $timeout(function() {
+                            onboard = $(element)
+                                .onboard(scope.ngOnboardOptions);
+                            onboard.start();
+                        });
+                    };
+                });
+
+                attrs.$observe('ngOnboardStop', function(value) {
+                    value = function() {
+                        $timeout(function() {
+                            onboard.stop();
+                        });
+                    };
+                });
+
                 scope.ngOnboardMethod = function() {
                     $timeout(function() {
-                        onboard = $(element).onboard(scope.ngOnboardOptions);
+                        onboard = $(element)
+                            .onboard(scope.ngOnboardOptions);
                         onboard.start();
                     });
                 };
@@ -28,7 +42,7 @@ ngOnboardDirective.directive('ngOnboardOptions', ['$timeout',
                     });
                 };
 
-                if (scope.ngOnboardAutostart == 'true') {
+                if (attrs.ngOnboardAutostart == 'true') {
                     $timeout(function() {
                         scope.ngOnboardMethod();
                     });
