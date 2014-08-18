@@ -1,53 +1,37 @@
-var ngOnboardDirective = angular.module('ng-onboard', []);
+var ngOnboard = angular.module('ng-onboard', []);
 
-
-ngOnboardDirective.directive('ngOnboardOptions', ['$timeout',
-    function($timeout) {
-
-        return {
-            restrict: 'A',
-            link: function(scope, element, attrs) {
-
-                var onboard;
-
-                attrs.$observe('ngOnboardMethod', function(value) {
-                    value = function() {
-                        $timeout(function() {
-                            onboard = $(element)
-                                .onboard(scope.ngOnboardOptions);
-                            onboard.start();
-                        });
-                    };
-                });
-
-                attrs.$observe('ngOnboardStop', function(value) {
-                    value = function() {
-                        $timeout(function() {
-                            onboard.stop();
-                        });
-                    };
-                });
-
-                scope.ngOnboardMethod = function() {
-                    $timeout(function() {
-                        onboard = $(element)
-                            .onboard(scope.ngOnboardOptions);
-                        onboard.start();
-                    });
-                };
-
-                scope.ngOnboardStop = function() {
-                    $timeout(function() {
-                        onboard.stop();
-                    });
-                };
-
-                if (attrs.ngOnboardAutostart == 'true') {
-                    $timeout(function() {
-                        scope.ngOnboardMethod();
-                    });
+ngOnboard.service('ngOnboard', ['$rootScope',
+    function() {
+        var service = {
+            options: {},
+            initialized: false,
+            init: function(selector) {
+                if (!selector) {
+                    console.log('ngOnboard Init', 'No element selector was specified!');
+                    return;
                 }
+                service.onboard = $(selector)
+                    .onboard(service.options);
+                return service.onboard;
+            },
+            start: function(selector) {
+                if (selector) {
+                    service.init(selector);
+                }
+                if (!angular.isDefined(service.onboard)) {
+                    console.log('ngOnboard Start', 'No element selector has been specified! Please ngOnboard.init(selector);');
+                    return;
+                }
+                service.onboard.start();
+            },
+            stop: function() {
+                if (!angular.isDefined(service.onboard)) {
+                    console.log('ngOnboard Stop', 'No element selector has been specified! Please ngOnboard.init(selector);');
+                    return;
+                }
+                service.onboard.stop();
             }
         };
+        return service;
     }
 ]);
