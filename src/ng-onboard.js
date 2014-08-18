@@ -1,6 +1,7 @@
 var ngOnboard = angular.module('ng-onboard', []);
 
-ngOnboard.service('ngOnboard', ['$rootScope',
+ngOnboard.service('ngOnboard', [
+
     function() {
         var service = {
             options: {},
