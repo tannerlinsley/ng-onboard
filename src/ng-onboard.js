@@ -5,29 +5,22 @@ ngOnboard.service('ngOnboard', [
     function() {
         var service = {
             options: {},
-            initialized: false,
-            init: function(selector) {
-                if (!selector) {
-                    console.log('ngOnboard Init', 'No element selector was specified!');
-                    return;
+            onboard: false,
+            start: function(selector, options) {
+                if (options) {
+                    service.options = options;
                 }
-                service.onboard = $(selector)
-                    .onboard(service.options);
-                return service.onboard;
-            },
-            start: function(selector) {
                 if (selector) {
-                    service.init(selector);
+                    service.onboard = $(selector)
+                        .onboard(service.options);
+                    service.onboard.start();
+                    return service.onboard;
                 }
-                if (!angular.isDefined(service.onboard)) {
-                    console.log('ngOnboard Start', 'No element selector has been specified! Please ngOnboard.init(selector);');
-                    return;
-                }
-                service.onboard.start();
+                console.log('ngOnboard Stop', 'No selector was specified!');
             },
             stop: function() {
-                if (!angular.isDefined(service.onboard)) {
-                    console.log('ngOnboard Stop', 'No element selector has been specified! Please ngOnboard.init(selector);');
+                if (!service.onboard) {
+                    console.log('ngOnboard Stop', 'No onboard is running!');
                     return;
                 }
                 service.onboard.stop();
