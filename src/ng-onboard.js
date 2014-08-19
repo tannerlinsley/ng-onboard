@@ -24,6 +24,15 @@ ngOnboard.service('ngOnboard', [
                     return;
                 }
                 service.onboard.stop();
+            },
+            next: function() {
+                service.onboard.next();
+            },
+            previous: function() {
+                service.onboard.previous();
+            },
+            gotoStep: function(i) {
+                service.onboard.gotoStep(i);
             }
         };
         return service;
