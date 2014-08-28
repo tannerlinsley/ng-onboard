@@ -1,4 +1,4 @@
-var ngOnboard = angular.module('ng-onboard', []);
+var ngOnboard = angular.module('ngOnboard', []);
 
 ngOnboard.service('ngOnboard', [
 
