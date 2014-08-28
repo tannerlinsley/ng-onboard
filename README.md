@@ -13,11 +13,21 @@ You can install this package through `Bower` by using the following command :
 
 ## Use
 
-**1.** Add ```ngOnboard``` to your app modules list.
+**1.** Add JS and CSS files to your project.
 
-**2.** Inject ```ngOnboard``` into a service or controller.
+```html
+<link href="onboard.css" rel="stylesheet">
 
-**3.** Define a tour with steps/options...
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="bower_components/onboardjs/onboard.js"></script>
+<script src="bower_components/ng-onboard/ng-onboard.js"></script>
+```
+
+**2.** Add ```ngOnboard``` to your app modules list.
+
+**3.** Inject ```ngOnboard``` into a service or controller.
+
+**4.** Define a tour with steps/options...
 
 ```javascript
 
@@ -52,26 +62,26 @@ var tour = {
 
 ```
 
-**4.** Start the tour on a high level element...
+**5.** Start the tour on a high level element...
 
 ```javascript
 ngOnboard.start('body', tour);
 ```
 
-**5.** Force the next/previous step...
+**6.** Force the next/previous step...
 
 ```javascript
 ngOnboard.next();
 ngOnboard.previous();
 ```
 
-**6.** Force the next step...
+**7.** Force the next step...
 
 ```javascript
 ngOnboard.gotoStep(3);
 ```
 
-**7.** Stop the tour prematurely...
+**8.** Stop the tour prematurely...
 
 ```javascript
 ngOnboard.stop();
