@@ -1,7 +1,7 @@
 {
   "name": "ng-onboard",
   "version": "1.0.0",
-  "main": "src/ng-onboard.js",
+  "main": "ng-onboard.js",
   "description": "Angular directive to wrap onboard.js",
   "license": "MIT",
   "ignore": [
