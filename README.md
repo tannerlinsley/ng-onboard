@@ -1,3 +1,5 @@
+This repository is currently unmaintained. If you would like to maintain it, please tweet me at @tannerlinsley.
+================
 ng-onboard
 ================
 
